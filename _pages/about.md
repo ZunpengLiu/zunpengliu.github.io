@@ -16,11 +16,11 @@ Aging, Aging-related diseases, Brain disorders, Neurodegenerative and psychiatri
 Research Interests
 ======
 My research interests are in epigenetic, regulatory networks for development, aging, and diseases. I mainly focused on understanding the epigenetic mechanisms and regulatory circuits for human development, aging, and brain disorders and identifying novel biomarkers and intervention strategies for human aging and aging-related diseases.
-1. Epigenomic Regulation of Development, Cell Fate Determination, Lineage Specification, and Aging
-2. Regulatory Network of Human Brain Aging, Neurodegenerative and Psychiatric Diseases
-3. Epigenetic Stability and Cell Identity Maintenance
-4. “Junk” DNA/ Transposable Element/ Endogenous Virus in Aging and Diseases
-5. Mechanism of Rejuvenation and Developing Novel Rejuvenation Strategies for Aging
+- Epigenomic Regulation of Development, Cell Fate Determination, Lineage Specification, and Aging
+- Regulatory Network of Human Brain Aging, Neurodegenerative and Psychiatric Diseases
+- Epigenetic Stability and Cell Identity Maintenance
+- “Junk” DNA/ Transposable Element/ Endogenous Virus in Aging and Diseases
+- Mechanism of Rejuvenation and Developing Novel Rejuvenation Strategies for Aging
 
 Getting started
 ======
