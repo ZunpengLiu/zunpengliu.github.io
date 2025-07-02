@@ -9,11 +9,18 @@ redirect_from:
 
 Zunpeng Liu is a Research Scientist at [MIT Computational Biology Lab] (https://compbio.mit.edu/) (PI: Professor [Manolis Kellis] (https://web.mit.edu/manoli/))
 
-A data-driven personal website
+Research Areas
 ======
-Like many other 
+Aging, Aging-related diseases, Brain disorders, Neurodegenerative and psychiatric diseases, Computational biology, Regulatory network, Artificial intelligence (AI) for healthcare/medicine, Precision medicine, etc.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerabi
+Research Interests
+======
+My research interests are in epigenetic, regulatory networks for development, aging, and diseases. I mainly focused on understanding the epigenetic mechanisms and regulatory circuits for human development, aging, and brain disorders and identifying novel biomarkers and intervention strategies for human aging and aging-related diseases.
+1. Epigenomic Regulation of Development, Cell Fate Determination, Lineage Specification, and Aging
+2. Regulatory Network of Human Brain Aging, Neurodegenerative and Psychiatric Diseases
+3. Epigenetic Stability and Cell Identity Maintenance
+4. “Junk” DNA/ Transposable Element/ Endogenous Virus in Aging and Diseases
+5. Mechanism of Rejuvenation and Developing Novel Rejuvenation Strategies for Aging
 
 Getting started
 ======
