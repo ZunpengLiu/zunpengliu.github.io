@@ -95,6 +95,152 @@ section{padding:90px 0}
 .aim-i{flex-shrink:0;width:26px;height:26px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:var(--white);margin-top:2px}
 .ai-r{background:var(--primary)}.ai-g{background:var(--accent)}.ai-b{background:var(--blue)}
 
+/* ======= Direction Cards ======= */
+.directions.section {
+  padding: 60px 0;
+}
+
+.direction-card {
+  border: 2.5px solid;
+  border-radius: 16px;
+  padding: 0;
+  margin-bottom: 36px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.direction-red   { border-color: #c0392b; }
+.direction-green { border-color: #26a69a; }
+.direction-blue  { border-color: #42a5f5; }
+
+/* === Inner flex layout: image left, text right === */
+.direction-inner {
+  display: flex;
+  align-items: stretch;
+}
+
+/* --- Left image --- */
+.direction-image {
+  flex: 0 0 260px;
+  max-width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #fafbfc;
+  border-right: 1px solid #eee;
+}
+
+.direction-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* --- Right text --- */
+.direction-text {
+  flex: 1;
+  padding: 28px 32px;
+}
+
+/* Badge */
+.direction-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 4px 16px;
+  border-radius: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.badge-red   { background-color: #c0392b; }
+.badge-green { background-color: #26a69a; }
+.badge-blue  { background-color: #42a5f5; }
+
+/* Heading */
+.direction-text h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #1a1a2e;
+}
+
+/* Summary paragraph */
+.direction-summary {
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* Numbered items */
+.direction-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.direction-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.item-number {
+  flex: 0 0 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.num-red   { background-color: #c0392b; }
+.num-green { background-color: #26a69a; }
+.num-blue  { background-color: #42a5f5; }
+
+.direction-item p {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.direction-item p strong {
+  color: #1a1a2e;
+}
+
+/* ======= Responsive: stack on small screens ======= */
+@media (max-width: 768px) {
+  .direction-inner {
+    flex-direction: column;
+  }
+
+  .direction-image {
+    flex: none;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+  }
+
+  .direction-image img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .direction-text {
+    padding: 20px;
+  }
+}
+
+
 /* PUBLICATIONS */
 .pubs{background:var(--white)}
 .pub-list{display:flex;flex-direction:column;gap:16px;max-width:950px;margin:0 auto}
@@ -378,48 +524,94 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
       <h2>Detailed Research Program</h2>
     </div>
     
-    <!-- Direction 1 -->
-    <div class="dir-card">
-    <div class="dir-bar bar-r"></div>
-    <div class="dir-body">
-      <div class="dir-tag tag-r">Direction 1</div>
-      <h3>Pinpointing the Road to Degeneration</h3>
-      <p>Systems-level decoding of aging and neurodegeneration — defining where, which, how, and when regulation systems fail across cell populations, molecular layers, and temporal dynamics (lifetime and circadian scales).</p>
-      <ul class="aims">
-        <li><span class="aim-i ai-r">1</span><div><strong>Multi-layer regulatory dysregulation:</strong> Integrative framework for decoding multi-layer molecular dysregulation across brain aging and neurological disease. Establishing population-scale single-cell and spatial foundations spanning genome, epigenome, and transcriptome.</div></li>
-        <li><span class="aim-i ai-r">2</span><div><strong>Circadian disruption &amp; temporal dynamics:</strong> Decoding circadian disruption in brain aging and neurodegeneration — mapping cell-type-specific circadian regulatory programs, AI-driven circadian time prediction, and circadian misalignment in disease.</div></li>
-        <li><span class="aim-i ai-r">3</span><div><strong>Transposable elements &amp; genomic dark matter:</strong> Regulatory circuitry of transposable elements in the brain and their dysregulation linking epigenomic erosion to LINE1 activation and cellular vulnerability in neurodegenerative disease.</div></li>
-      </ul>
+ <!-- ======= Research Directions Section ======= -->
+<section id="directions" class="directions section">
+  <div class="container">
+
+    <!-- Direction 1 — RED -->
+    <div class="direction-card direction-red">
+      <div class="direction-inner">
+        <div class="direction-image">
+          <img src="https://zunpengliu.github.io/Directions/Direction1.png" alt="Direction 1 Schema">
+        </div>
+        <div class="direction-text">
+          <span class="direction-badge badge-red">DIRECTION 1</span>
+          <h3>Pinpointing the Road to Degeneration</h3>
+          <p class="direction-summary">
+            Systems-level decoding of aging and neurodegeneration — defining where, which, how, and when regulation systems fail across cell populations, molecular layers, and temporal dynamics (lifetime and circadian scales).
+          </p>
+          <div class="direction-items">
+            <div class="direction-item">
+              <span class="item-number num-red">1</span>
+              <p><strong>Multi-layer regulatory dysregulation:</strong> Integrative framework for decoding multi-layer molecular dysregulation across brain aging and neurological disease. Establishing population-scale single-cell and spatial foundations spanning genome, epigenome, and transcriptome.</p>
+            </div>
+            <div class="direction-item">
+              <span class="item-number num-red">2</span>
+              <p><strong>Circadian disruption &amp; temporal dynamics:</strong> Decoding circadian disruption in brain aging and neurodegeneration — mapping cell-type-specific circadian regulatory programs, AI-driven circadian time prediction, and circadian misalignment in disease.</p>
+            </div>
+            <div class="direction-item">
+              <span class="item-number num-red">3</span>
+              <p><strong>Transposable elements &amp; genomic dark matter:</strong> Regulatory circuitry of transposable elements in the brain and their dysregulation linking epigenomic erosion to LINE1 activation and cellular vulnerability in neurodegenerative disease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Direction 2 — GREEN -->
+    <div class="direction-card direction-green">
+      <div class="direction-inner">
+        <div class="direction-image">
+          <img src="https://zunpengliu.github.io/Directions/Direction2.png" alt="Direction 2 Schema">
+        </div>
+        <div class="direction-text">
+          <span class="direction-badge badge-green">DIRECTION 2</span>
+          <h3>Reopening the Road to Rejuvenation</h3>
+          <p class="direction-summary">
+            From degeneration to regeneration — restoring cellular and tissue function to counter degeneration. An integrative framework bridging single-cell genomics, multi-omics, biomedical informatics, and experimental validation.
+          </p>
+          <div class="direction-items">
+            <div class="direction-item">
+              <span class="item-number num-green">1</span>
+              <p><strong>Safeguarding the genome and epigenome:</strong> Nuclear guardians of genome–epigenome integrity. Multimodal "Regulatory Funnel" model to discover novel epigenomic regulators and stabilizers; AI screening of candidate stabilizers using in silico models and 3D human systems.</p>
+            </div>
+            <div class="direction-item">
+              <span class="item-number num-green">2</span>
+              <p><strong>Targeted Cellular Rejuvenation &amp; Regeneration:</strong> Resetting glial fate to restore repair-supportive capacity. Defining glial activation–exhaustion trajectories, identifying fate-shifting regulators, and glial engineering for niche restoration and tissue regeneration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <!-- Direction 2 -->
-    <div class="dir-card">
-    <div class="dir-bar bar-g"></div>
-    <div class="dir-body">
-      <div class="dir-tag tag-g">Direction 2</div>
-      <h3>Reopening the Road to Rejuvenation</h3>
-      <p>From degeneration to regeneration — restoring cellular and tissue function to counter degeneration. An integrative framework bridging single-cell genomics, multi-omics, biomedical informatics, and experimental validation.</p>
-      <ul class="aims">
-        <li><span class="aim-i ai-g">1</span><div><strong>Safeguarding the genome and epignome:</strong> Nuclear guardians of genome–epigenome integrity. Multimodal "Regulatory Funnel" model to discover novel epigenomic regulators and stabilizers; AI screening of candidate stabilizers using in silico models and 3D human systems.</div></li>
-        <li><span class="aim-i ai-g">2</span><div><strong>Targeted Cellular Rejuvenation &amp; Regeneration:</strong> Resetting glial fate to restore repair-supportive capacity. Defining glial activation–exhaustion trajectories, identifying fate-shifting regulators, and glial engineering for niche restoration and tissue regeneration.</div></li>
-      </ul>
-    </div>
-    </div>
-    
-    <!-- Direction 3 -->
-    <div class="dir-card">
-    <div class="dir-bar bar-b"></div>
-    <div class="dir-body">
-      <div class="dir-tag tag-b">Direction 3</div>
-      <h3>Navigating from Predictive Modeling to Therapeutics</h3>
-      <p>An integrated framework from degeneration to regeneration and therapeutic design — leveraging AI foundation models, generative inference, and drug discovery.</p>
-      <ul class="aims">
-        <li><span class="aim-i ai-b">1</span><div><strong>Modeling &amp; prediction of aging:</strong> Single-cell and spatial foundation models for prediction at individual, cell, and spatial hotspot/niche levels. Biological interpretability for mechanism, cellular basis, molecular hallmarks, and therapeutic targets. Ultimate goal: non-invasive prediction.</div></li>
-        <li><span class="aim-i ai-b">2</span><div><strong>"Virtual Aging Brain" — GenAI:</strong> Cross-modal generative genomics inference and in silico perturbation using perturb-encoder/decoder architecture. Generate testable hypotheses, candidate intervention targets, and rejuvenation strategies.</div></li>
-        <li><span class="aim-i ai-b">3</span><div><strong>Therapeutic design &amp; evaluation:</strong> AI-guided drug discovery and repurposing, in vitro 2D + 3D organoid perturbation + imaging, in vivo validation, and translational potential.</div></li>
-      </ul>
-    </div>
+
+    <!-- Direction 3 — BLUE -->
+    <div class="direction-card direction-blue">
+      <div class="direction-inner">
+        <div class="direction-image">
+          <img src="https://zunpengliu.github.io/Directions/Direction3.png" alt="Direction 3 Schema">
+        </div>
+        <div class="direction-text">
+          <span class="direction-badge badge-blue">DIRECTION 3</span>
+          <h3>Navigating from Predictive Modeling to Therapeutics</h3>
+          <p class="direction-summary">
+            An integrated framework from degeneration to regeneration and therapeutic design — leveraging AI foundation models, generative inference, and drug discovery.
+          </p>
+          <div class="direction-items">
+            <div class="direction-item">
+              <span class="item-number num-blue">1</span>
+              <p><strong>Modeling &amp; prediction of aging:</strong> Single-cell and spatial foundation models for prediction at individual, cell, and spatial hotspot/niche levels. Biological interpretability for mechanism, cellular basis, molecular hallmarks, and therapeutic targets. Ultimate goal: non-invasive prediction.</p>
+            </div>
+            <div class="direction-item">
+              <span class="item-number num-blue">2</span>
+              <p><strong>"Virtual Aging Brain" — GenAI:</strong> Cross-modal generative genomics inference and in silico perturbation using perturb-encoder/decoder architecture. Generate testable hypotheses, candidate intervention targets, and rejuvenation strategies.</p>
+            </div>
+            <div class="direction-item">
+              <span class="item-number num-blue">3</span>
+              <p><strong>Therapeutic design &amp; evaluation:</strong> AI-guided drug discovery and repurposing, in vitro 2D + 3D organoid perturbation + imaging, in vivo validation, and translational potential.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </div>
     </section>
