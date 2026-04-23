@@ -44,14 +44,8 @@ nav .ctn{display:flex;justify-content:space-between;align-items:center;height:68
 .btn-o{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.25)}
 .btn-o:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
 .hero-vis{flex-shrink:0;width:280px;height:280px;border-radius:50%;background:linear-gradient(135deg,rgba(0,150,136,.12),rgba(139,0,0,.12));border:2px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center}
-.hero-vis .initials{font-size:4.5rem;font-weight:800;color:rgba(255,255,255,.85)}
+.hero-vis .initials{font-size:4.5rem;font-weight:800;color:rgba(255,255,255,.85);text-align:center}
 .hero-vis .initials small{display:block;font-size:.65rem;font-weight:400;color:rgba(255,255,255,.35);letter-spacing:4px;text-transform:uppercase;margin-top:8px}
-
-/* STATS */
-.stats{padding:55px 0;border-bottom:1px solid var(--g200)}
-.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;text-align:center}
-.stat-n{font-size:2.5rem;font-weight:800;color:var(--primary);line-height:1;margin-bottom:5px}
-.stat-l{color:var(--g600);font-size:.83rem}
 
 /* SECTION COMMON */
 section{padding:90px 0}
@@ -62,186 +56,91 @@ section{padding:90px 0}
 
 /* MISSION */
 .mission{background:var(--g100)}
-.mission-q{font-size:1.35rem;font-weight:600;color:var(--dark);line-height:1.75;max-width:850px;margin:0 auto 20px;text-align:center;position:relative;padding-top:30px}
-.mission-q::before{content:'"';font-size:5rem;color:var(--accent);opacity:.15;position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-family:Georgia,serif}
-.mission-d{font-size:.98rem;color:var(--g600);line-height:1.9;max-width:800px;margin:0 auto;text-align:center}
-
-/* FRAMEWORK */
-.fw-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:16px;margin-bottom:24px}
-.fw-card{text-align:center;padding:28px 22px;background:var(--g100);border-radius:16px;transition:var(--tr);border:2px solid transparent}
-.fw-card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:var(--shadow2)}
-.fw-num{display:inline-block;width:38px;height:38px;line-height:38px;border-radius:50%;font-weight:800;font-size:.9rem;margin-bottom:12px;color:var(--white)}
-.fw-card h3{font-size:1.05rem;color:var(--dark);margin-bottom:8px}
-.fw-card p{font-size:.84rem;color:var(--g600);line-height:1.55}
-.fw-arr{font-size:1.6rem;color:var(--g300);text-align:center}
-
-/* RESEARCH DIRECTIONS */
-.research{background:var(--g100)}
-.dir-card{background:var(--white);border-radius:18px;box-shadow:var(--shadow);transition:var(--tr);border:1px solid transparent;margin-bottom:28px;overflow:hidden;display:flex}
-.dir-card:hover{box-shadow:var(--shadow2);border-color:var(--accent)}
-.dir-bar{width:6px;flex-shrink:0}
-.bar-r{background:linear-gradient(180deg,var(--primary),#c0392b)}
-.bar-g{background:linear-gradient(180deg,var(--accent),#26a69a)}
-.bar-b{background:linear-gradient(180deg,var(--blue),#42a5f5)}
-.dir-body{padding:34px 38px;flex:1}
-.dir-tag{display:inline-block;padding:4px 14px;border-radius:4px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
-.tag-r{background:#fce4ec;color:var(--primary)}
-.tag-g{background:#e0f2f1;color:var(--accent2)}
-.tag-b{background:#e3f2fd;color:var(--blue)}
-.dir-body h3{font-size:1.35rem;font-weight:700;color:var(--dark);margin-bottom:10px}
-.dir-body>p{color:var(--g600);font-size:.92rem;margin-bottom:18px;line-height:1.8}
-.aims{list-style:none;display:flex;flex-direction:column;gap:10px}
-.aims li{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--g800);line-height:1.6}
-.aim-i{flex-shrink:0;width:26px;height:26px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:var(--white);margin-top:2px}
-.ai-r{background:var(--primary)}.ai-g{background:var(--accent)}.ai-b{background:var(--blue)}
+.mission-q{font-size:1.65rem;font-weight:600;color:var(--dark);line-height:1.75;max-width:900px;margin:0 auto 20px;text-align:center;position:relative;padding-top:30px}
+.mission-q::before{content:'\201C';font-size:5rem;color:var(--accent);opacity:.15;position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-family:Georgia,serif}
+.mission-d{font-size:.98rem;color:var(--g600);line-height:1.9;max-width:900px;margin:0 auto;text-align:center}
 
 /* ======= Direction Cards ======= */
-.directions.section {
-  padding: 60px 0;
-}
+.research{background:var(--g100)}
 
-.direction-card {
-  border: 2.5px solid;
-  border-radius: 16px;
-  padding: 0;
-  margin-bottom: 36px;
-  background: #fff;
-  overflow: hidden;
+.direction-card{
+  border:2.5px solid;
+  border-radius:18px;
+  margin-bottom:32px;
+  background:var(--white);
+  overflow:hidden;
+  transition:var(--tr);
+  box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+.direction-card:last-child{margin-bottom:0}
+.direction-card:hover{
+  box-shadow:0 12px 40px rgba(0,0,0,.1);
+  transform:translateY(-3px);
 }
 
 .direction-red   { border-color: #c0392b; }
 .direction-green { border-color: #26a69a; }
 .direction-blue  { border-color: #42a5f5; }
 
-/* === Inner flex layout: image left, text right === */
-.direction-inner {
-  display: flex;
-  align-items: stretch;
+.direction-inner{display:flex;align-items:stretch}
+
+.direction-image{
+  flex:0 0 280px;
+  max-width:280px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px;
+  position:relative;
 }
+.direction-red .direction-image{background:linear-gradient(135deg,#fef0f0,#fff5f5)}
+.direction-green .direction-image{background:linear-gradient(135deg,#eef9f7,#f0faf8)}
+.direction-blue .direction-image{background:linear-gradient(135deg,#eef4fc,#f0f6fd)}
 
-/* --- Left image --- */
-.direction-image {
-  flex: 0 0 260px;
-  max-width: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  background: #fafbfc;
-  border-right: 1px solid #eee;
+.direction-image img{width:100%;height:auto;object-fit:contain}
+
+.direction-text{flex:1;padding:32px 36px}
+
+.direction-badge{
+  display:inline-block;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:1.8px;
+  padding:5px 16px;
+  border-radius:20px;
+  color:var(--white);
+  margin-bottom:14px;
+  text-transform:uppercase;
 }
+.badge-red   { background:linear-gradient(135deg,#c0392b,#e74c3c); }
+.badge-green { background:linear-gradient(135deg,#009688,#26a69a); }
+.badge-blue  { background:linear-gradient(135deg,#1565c0,#42a5f5); }
 
-.direction-image img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+.direction-text h3{font-size:1.35rem;font-weight:700;margin:0 0 10px;color:var(--dark)}
+.direction-summary{font-size:.92rem;color:var(--g600);margin-bottom:20px;line-height:1.7}
+.direction-items{display:flex;flex-direction:column;gap:14px}
+.direction-item{display:flex;align-items:flex-start;gap:12px}
+
+.item-number{
+  flex:0 0 26px;
+  height:26px;
+  border-radius:50%;
+  color:var(--white);
+  font-size:.78rem;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:3px;
 }
+.num-red   { background:#c0392b; }
+.num-green { background:#26a69a; }
+.num-blue  { background:#42a5f5; }
 
-/* --- Right text --- */
-.direction-text {
-  flex: 1;
-  padding: 28px 32px;
-}
+.direction-item p{font-size:.87rem;color:#555;line-height:1.65;margin:0}
+.direction-item p strong{color:var(--dark)}
 
-/* Badge */
-.direction-badge {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  padding: 4px 16px;
-  border-radius: 20px;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.badge-red   { background-color: #c0392b; }
-.badge-green { background-color: #26a69a; }
-.badge-blue  { background-color: #42a5f5; }
-
-/* Heading */
-.direction-text h3 {
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-  color: #1a1a2e;
-}
-
-/* Summary paragraph */
-.direction-summary {
-  font-size: 0.92rem;
-  color: #555;
-  margin-bottom: 18px;
-  line-height: 1.6;
-}
-
-/* Numbered items */
-.direction-items {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.direction-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.item-number {
-  flex: 0 0 26px;
-  height: 26px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2px;
-}
-
-.num-red   { background-color: #c0392b; }
-.num-green { background-color: #26a69a; }
-.num-blue  { background-color: #42a5f5; }
-
-.direction-item p {
-  font-size: 0.88rem;
-  color: #444;
-  line-height: 1.55;
-  margin: 0;
-}
-
-.direction-item p strong {
-  color: #1a1a2e;
-}
-
-/* ======= Responsive: stack on small screens ======= */
-@media (max-width: 768px) {
-  .direction-inner {
-    flex-direction: column;
-  }
-
-  .direction-image {
-    flex: none;
-    max-width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #eee;
-    padding: 20px;
-  }
-
-  .direction-image img {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-
-  .direction-text {
-    padding: 20px;
-  }
-}
-
-
-/* PUBLICATIONS */
+/* ======= PUBLICATIONS ======= */
 .pubs{background:var(--white)}
 .pub-list{display:flex;flex-direction:column;gap:16px;max-width:950px;margin:0 auto}
 .pub{background:var(--white);border:1px solid var(--g200);border-radius:12px;padding:22px 26px;transition:var(--tr)}
@@ -249,7 +148,6 @@ section{padding:90px 0}
 .pub.feat{border-left:4px solid var(--primary)}
 .pub-meta{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
 .pub-yr{background:var(--g100);color:var(--accent);font-weight:700;font-size:.76rem;padding:3px 10px;border-radius:4px}
-.pub-badge{background:#fce4ec;color:var(--primary);font-weight:700;font-size:.68rem;padding:2px 8px;border-radius:3px;text-transform:uppercase}
 .pub-t{font-size:.98rem;font-weight:600;color:var(--dark);margin-bottom:5px;line-height:1.5}
 .pub-a{color:var(--g600);font-size:.83rem;margin-bottom:3px}
 .pub-a strong{color:var(--primary);font-weight:600}
@@ -257,37 +155,24 @@ section{padding:90px 0}
 .pub-v strong{color:var(--dark);font-style:normal}
 .pub-hl{margin-top:7px;display:flex;gap:6px;flex-wrap:wrap}
 .pub-hlt{font-size:.68rem;padding:2px 7px;background:#fff3e0;color:#e65100;border-radius:3px;font-weight:600}
-.pub-lk {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-.pub-cat-title{font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:20px;padding-bottom:8px;border-bottom:2px solid var(--accent);display:inline-block}
+.pub-lk{text-decoration:underline;text-underline-offset:2px}
 
-/* PUB TABS */
 .pub-tabs{display:flex;gap:8px;justify-content:center;margin-bottom:36px;flex-wrap:wrap}
 .pub-tab{padding:10px 24px;border-radius:8px;border:2px solid var(--g200);background:var(--white);color:var(--g600);font-size:.88rem;font-weight:600;cursor:pointer;transition:var(--tr)}
 .pub-tab:hover{border-color:var(--accent);color:var(--accent)}
 .pub-tab.active{background:var(--accent);color:var(--white);border-color:var(--accent)}
-.pub-list{display:flex;flex-direction:column;gap:16px;max-width:950px;margin:0 auto}
 
-/* PUB EXTRA: Graphic Abstract + Highlights */
 .pub-extra{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px;padding-top:16px;border-top:1px dashed var(--g200)}
-.pub-ga{border-radius:0;overflow:hidden;background:var(--g0);display:flex;align-items:center;justify-content:center;min-height:160px}
-.pub-ga img{width:100%;max-width:350px; height:auto;object-fit:contain}
+.pub-ga{overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:160px}
+.pub-ga img{width:100%;max-width:350px;height:auto;object-fit:contain}
 .pub-key{padding:4px 0}
 .pub-key h5{font-size:.85rem;font-weight:700;color:var(--dark);margin-bottom:10px}
 .pub-key ul{list-style:none;display:flex;flex-direction:column;gap:8px}
 .pub-key li{font-size:.82rem;color:var(--g600);line-height:1.55;padding-left:14px;position:relative}
-.pub-key li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-weight:700;font-size:.75rem}
+.pub-key li::before{content:'\25B8';position:absolute;left:0;color:var(--accent);font-weight:700;font-size:.75rem}
 
-@media(max-width:768px){
-.pub-extra{grid-template-columns:1fr}
-}
-
-/* ===== TEAM (merged with About) ===== */
+/* ===== TEAM ===== */
 .team{background:var(--g100);padding:90px 0}
-
-/* PI Detail Card */
 .pi-card{background:var(--white);border-radius:20px;padding:48px 52px;box-shadow:var(--shadow);margin-bottom:52px}
 .pi-name{font-size:2.2rem;font-weight:800;color:var(--dark);margin:8px 0 28px}
 .pi-main{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;margin-bottom:32px}
@@ -301,16 +186,7 @@ section{padding:90px 0}
 .snap-item{margin-bottom:14px}
 .snap-item strong{display:block;font-size:.85rem;color:var(--dark);margin-bottom:2px}
 .snap-item span{font-size:.84rem;color:var(--g600);line-height:1.6}
-.pi-bottom{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.pi-box{background:var(--g100);border-radius:14px;padding:28px}
-.pi-box h4{font-size:1.05rem;font-weight:700;color:var(--dark);margin-bottom:14px}
-.pi-box ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-.pi-box li{font-size:.84rem;color:var(--g600);line-height:1.6;padding-left:8px;position:relative}
-.pi-box li::before{content:'·';position:absolute;left:0;color:var(--accent);font-weight:700}
-.pi-box li strong{color:var(--dark)}
-.sem-yr{display:inline-block;background:var(--white);color:var(--accent);font-weight:700;font-size:.72rem;padding:1px 7px;border-radius:3px;margin-right:4px}
 
-/* Mentee Cards */
 .team-section{margin-bottom:40px}
 .team-cat-title{font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:20px;padding-bottom:8px;border-bottom:2px solid var(--accent);display:inline-block}
 .team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
@@ -322,13 +198,7 @@ section{padding:90px 0}
 .tm-role{font-size:.78rem;color:var(--accent);font-weight:600;margin-bottom:8px}
 .tm-desc{font-size:.82rem;color:var(--g600);line-height:1.55}
 
-@media(max-width:768px){
-.pi-card{padding:28px 22px}
-.pi-main,.pi-bottom{grid-template-columns:1fr}
-.team-grid{grid-template-columns:1fr}
-}
-
-/* ===== NEWS & ACTIVITIES ===== */
+/* ===== NEWS ===== */
 .news{background:var(--white);padding:90px 0}
 .news-tabs{display:flex;gap:8px;justify-content:center;margin-bottom:36px;flex-wrap:wrap}
 .news-tab{padding:10px 24px;border-radius:8px;border:2px solid var(--g200);background:var(--white);color:var(--g600);font-size:.88rem;font-weight:600;cursor:pointer;transition:var(--tr)}
@@ -350,11 +220,6 @@ section{padding:90px 0}
 .ni-body p{font-size:.84rem;color:var(--g600);line-height:1.55}
 .ni-body strong{color:var(--dark)}
 
-@media(max-width:768px){
-.news-item{flex-direction:column;gap:6px}
-.ni-date{width:auto}
-}
-
 /* ===== JOIN US ===== */
 .joinus{background:var(--white);padding:90px 0}
 .join-card{background:var(--g100);border-radius:20px;padding:48px 52px;max-width:1050px;margin:0 auto}
@@ -366,7 +231,7 @@ section{padding:90px 0}
 .join-interests h4{font-size:1.05rem;font-weight:700;color:var(--dark);margin-bottom:14px}
 .join-interests ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .join-interests li{font-size:.87rem;color:var(--g600);padding-left:14px;position:relative;line-height:1.55}
-.join-interests li::before{content:'•';position:absolute;left:0;color:var(--accent);font-weight:700}
+.join-interests li::before{content:'\2022';position:absolute;left:0;color:var(--accent);font-weight:700}
 
 /* ===== CONTACT ===== */
 .contact{background:var(--g100);padding:90px 0}
@@ -383,51 +248,51 @@ section{padding:90px 0}
 .profile-lk{display:block;color:var(--dark);font-size:.9rem;margin-bottom:12px;transition:var(--tr);text-decoration:underline;text-underline-offset:2px}
 .profile-lk:hover{color:var(--accent);padding-left:4px}
 
-/* RESPONSIVE additions */
-@media(max-width:768px){
-.about-grid,.about-bottom,.join-grid,.contact-grid{grid-template-columns:1fr}
-.about-card,.join-card,.contact-card{padding:28px 22px}
-}
-
 /* FOOTER */
 footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:center;font-size:.82rem}
 
-/* RESPONSIVE */
+/* ======= RESPONSIVE ======= */
 @media(max-width:768px){
-.nav-links{display:none;position:absolute;top:68px;left:0;width:100%;background:var(--white);flex-direction:column;padding:24px;gap:18px;box-shadow:var(--shadow)}
-.nav-links.active{display:flex}
-.hamburger{display:flex}
-.hero .ctn{flex-direction:column;text-align:center}
-.hero h1{font-size:2.2rem}
-.hero p.desc{margin:0 auto 32px}
-.hero-btns{justify-content:center}
-.hero-vis{width:200px;height:200px}
-.hero-vis .initials{font-size:3rem}
-.stats-grid{grid-template-columns:repeat(3,1fr)}
-.fw-grid{grid-template-columns:1fr;gap:12px}
-.fw-arr{transform:rotate(90deg)}
-.dir-card{flex-direction:column}
-.dir-bar{width:100%;height:5px}
-.ct-grid{grid-template-columns:1fr}
+  .nav-links{display:none;position:absolute;top:68px;left:0;width:100%;background:var(--white);flex-direction:column;padding:24px;gap:18px;box-shadow:var(--shadow)}
+  .nav-links.active{display:flex}
+  .hamburger{display:flex}
+  .hero .ctn{flex-direction:column;text-align:center}
+  .hero h1{font-size:2.2rem}
+  .hero p.desc{margin:0 auto 32px}
+  .hero-btns{justify-content:center}
+  .hero-vis{width:200px;height:200px}
+  .hero-vis .initials{font-size:3rem}
+  .direction-inner{flex-direction:column}
+  .direction-image{flex:none;max-width:100%;border-right:none;border-bottom:1px solid #eee;padding:24px}
+  .direction-image img{max-width:220px;margin:0 auto}
+  .direction-text{padding:24px}
+  .pub-extra{grid-template-columns:1fr}
+  .pi-card{padding:28px 22px}
+  .pi-main{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+  .news-item{flex-direction:column;gap:6px}
+  .ni-date{width:auto}
+  .join-grid,.contact-grid{grid-template-columns:1fr}
+  .join-card,.contact-card{padding:28px 22px}
 }
 </style>
 </head>
-<script>
-    function switchTab(tab, btn){
-      document.querySelectorAll('.ptab').forEach(function(el){ el.style.display='none'; });
-      document.querySelectorAll('.pub-tab').forEach(function(el){ el.classList.remove('active'); });
-      document.getElementById('tab-'+tab).style.display='flex';
-      btn.classList.add('active');
-    }
-    
-    function switchNewsTab(tab, btn){
-      document.querySelectorAll('.ntab').forEach(function(el){ el.style.display='none'; });
-      document.querySelectorAll('.news-tab').forEach(function(el){ el.classList.remove('active'); });
-      document.getElementById('ntab-'+tab).style.display='flex';
-      btn.classList.add('active');
-    }
-    </script>
 <body>
+
+<script>
+function switchTab(tab, btn){
+  document.querySelectorAll('.ptab').forEach(function(el){ el.style.display='none'; });
+  document.querySelectorAll('.pub-tab').forEach(function(el){ el.classList.remove('active'); });
+  document.getElementById('tab-'+tab).style.display='flex';
+  btn.classList.add('active');
+}
+function switchNewsTab(tab, btn){
+  document.querySelectorAll('.ntab').forEach(function(el){ el.style.display='none'; });
+  document.querySelectorAll('.news-tab').forEach(function(el){ el.classList.remove('active'); });
+  document.getElementById('ntab-'+tab).style.display='flex';
+  btn.classList.add('active');
+}
+</script>
 
 <!-- NAV -->
 <nav>
@@ -441,7 +306,7 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
     <li><a href="#news">News</a></li>
     <li><a href="#joinus">Join Us</a></li>
     <li><a href="#contact">Contact</a></li>
-  </ul>
+</ul>
 <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')">
   <span></span><span></span><span></span>
 </div>
@@ -450,548 +315,470 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
 
 <!-- HERO -->
 <section class="hero">
-    <div class="ctn">
-    <div class="hero-content">
-      <div class="hero-tag">🧬 MIT CSAIL · Broad Institute of MIT and Harvard</div>
-      <h1>Decoding and Modeling <span class="hl">Aging &amp; Neurodegeneration</span> for Therapeutic Innovation</h1>
-      <div class="sub">Zunpeng Liu, Ph.D.</div>
-      <p class="desc">
-        We systematically decode the molecular and regulatory circuitry of brain aging and neurodegeneration, and translate mechanistic insights into predictive biomarkers, rejuvenation strategies, and AI-driven therapeutic design.
-      </p>
-      <div class="hero-btns">
-        <a href="#research" class="btn btn-p">Research Directions →</a>
-        <a href="#publications" class="btn btn-o">Publications</a>
+<div class="ctn">
+<div class="hero-content">
+  <div class="hero-tag">🧬 MIT CSAIL · Broad Institute of MIT and Harvard</div>
+  <h1>Decoding and Modeling <span class="hl">Aging &amp; Neurodegeneration</span> for Therapeutic Innovation</h1>
+  <div class="sub">Zunpeng Liu, Ph.D.</div>
+  <p class="desc">We systematically decode the molecular and regulatory circuitry of brain aging and neurodegeneration, and translate mechanistic insights into predictive biomarkers, rejuvenation strategies, and AI-driven therapeutic design.</p>
+  <div class="hero-btns">
+    <a href="#research" class="btn btn-p">Research Directions →</a>
+    <a href="#publications" class="btn btn-o">Publications</a>
+  </div>
+</div>
+<div class="hero-vis">
+  <div class="initials">ZL<small>MIT CSAIL</small></div>
+</div>
+</div>
+</section>
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+<div class="ctn">
+<div class="shdr">
+  <div class="slbl">Our Mission</div>
+</div>
+<div class="mission-q">Systematically decode the mechanisms of brain aging and neurodegeneration, and translate that understanding into principles for rejuvenation, regeneration, and therapeutic innovation.</div>
+<p class="mission-d">By integrating large-scale single-cell multi-omics, cross-layer regulatory circuitry analyses, human disease genetics and clinical informatics, and AI/ML-driven modeling, we study the genetic and epigenomic mechanisms that govern regulatory networks and intercellular communication — and how their disruption drives cellular vulnerability and dysfunction in aging and neurodegenerative conditions.</p>
+</div>
+</section>
+
+<!-- RESEARCH DIRECTIONS -->
+<section class="research" id="research">
+<div class="ctn">
+<div class="shdr">
+  <div class="slbl">Research Directions</div>
+  <h2>A closed-loop framework linking mechanism discovery, rejuvenation, and therapeutic development for brain aging and neurological diseases</h2>
+</div>
+
+<!-- Direction 1 — RED -->
+<div class="direction-card direction-red">
+  <div class="direction-inner">
+    <div class="direction-image">
+      <img src="https://zunpengliu.github.io/Directions/Direction1.png" alt="Direction 1 Schema">
+    </div>
+    <div class="direction-text">
+      <span class="direction-badge badge-red">DIRECTION 1</span>
+      <h3>Pinpointing the Road to Degeneration</h3>
+      <p class="direction-summary">Systems-level decoding of aging and neurodegeneration — defining where, which, how, and when regulation systems fail across cell populations, molecular layers, and temporal dynamics (lifetime and circadian scales).</p>
+      <div class="direction-items">
+        <div class="direction-item">
+          <span class="item-number num-red">1</span>
+          <p><strong>Multi-layer regulatory dysregulation:</strong> Integrative framework for decoding multi-layer molecular dysregulation across brain aging and neurological disease. Establishing population-scale single-cell and spatial foundations spanning genome, epigenome, and transcriptome.</p>
+        </div>
+        <div class="direction-item">
+          <span class="item-number num-red">2</span>
+          <p><strong>Circadian disruption &amp; temporal dynamics:</strong> Decoding circadian disruption in brain aging and neurodegeneration — mapping cell-type-specific circadian regulatory programs, AI-driven circadian time prediction, and circadian misalignment in disease.</p>
+        </div>
+        <div class="direction-item">
+          <span class="item-number num-red">3</span>
+          <p><strong>Transposable elements &amp; genomic dark matter:</strong> Regulatory circuitry of transposable elements in the brain and their dysregulation linking epigenomic erosion to LINE1 activation and cellular vulnerability in neurodegenerative disease.</p>
+        </div>
       </div>
     </div>
-    <div class="hero-vis">
-      <div class="initials">ZL<small>MIT CSAIL</small></div>
-    </div>
-    </div>
-    </section>
-    
-    
-    <!-- MISSION -->
-    <section class="mission" id="mission">
-    <div class="ctn">
-    <div class="shdr">
-      <div class="slbl">Our Mission</div>
-      <h2>A Closed-Loop Framework for Therapeutic Innovation</h2>
-    </div>
-    <div class="mission-q">
-      Systematically decode the mechanisms of brain aging and neurodegeneration, and translate that understanding into principles for rejuvenation, regeneration, and therapeutic innovation.
-    </div>
-    <p class="mission-d">
-      By integrating large-scale single-cell multi-omics, cross-layer regulatory circuitry analyses, human disease genetics and clinical informatics, and AI/ML-driven modeling, we study the genetic and epigenomic mechanisms that govern regulatory networks and intercellular communication — and how their disruption drives cellular vulnerability and dysfunction in aging and neurodegenerative conditions.
-    </p>
-    </div>
-    </section>
-    
-    <!-- FRAMEWORK -->
-    <section id="framework">
-    <div class="ctn">
-    <div class="shdr">
-      <div class="slbl">Research Framework</div>
-      <h2>Three Integrated Directions</h2>
-      <p>A closed-loop framework linking mechanism discovery, rejuvenation, and therapeutic development.</p>
-    </div>
-    <div class="fw-grid">
-      <div class="fw-card">
-        <div class="fw-num" style="background:var(--primary)">1</div>
-        <h3>Pinpointing the Road to Degeneration</h3>
-        <p>Systems-level decoding of where, which, how, and when regulation systems fail across aging and neurodegeneration.</p>
+  </div>
+</div>
+
+<!-- Direction 2 — GREEN -->
+<div class="direction-card direction-green">
+    <div class="direction-inner">
+      <div class="direction-image">
+        <img src="https://zunpengliu.github.io/Directions/Direction2.png" alt="Direction 2 Schema">
       </div>
-      <div class="fw-arr">→</div>
-      <div class="fw-card">
-        <div class="fw-num" style="background:var(--accent)">2</div>
+      <div class="direction-text">
+        <span class="direction-badge badge-green">DIRECTION 2</span>
         <h3>Reopening the Road to Rejuvenation</h3>
-        <p>Restoring cellular and tissue function to counter degeneration through epigenomic stabilization and cellular regeneration.</p>
-      </div>
-      <div class="fw-arr">→</div>
-      <div class="fw-card">
-        <div class="fw-num" style="background:var(--blue)">3</div>
-        <h3>Navigating Predictive Modeling to Therapeutics</h3>
-        <p>AI-enabled prediction, perturbation, cross-modal generation, and therapeutic design with translational potential.</p>
-      </div>
-    </div>
-    </div>
-    </section>
-    
-    <!-- RESEARCH -->
-    <section class="research" id="research">
-    <div class="ctn">
-    <div class="shdr">
-      <div class="slbl">Research Directions</div>
-      <h2>Detailed Research Program</h2>
-    </div>
-    
- <!-- ======= Research Directions Section ======= -->
-<section id="directions" class="directions section">
-  <div class="container">
-
-    <!-- Direction 1 — RED -->
-    <div class="direction-card direction-red">
-      <div class="direction-inner">
-        <div class="direction-image">
-          <img src="https://zunpengliu.github.io/Directions/Direction1.png" alt="Direction 1 Schema">
-        </div>
-        <div class="direction-text">
-          <span class="direction-badge badge-red">DIRECTION 1</span>
-          <h3>Pinpointing the Road to Degeneration</h3>
-          <p class="direction-summary">
-            Systems-level decoding of aging and neurodegeneration — defining where, which, how, and when regulation systems fail across cell populations, molecular layers, and temporal dynamics (lifetime and circadian scales).
-          </p>
-          <div class="direction-items">
-            <div class="direction-item">
-              <span class="item-number num-red">1</span>
-              <p><strong>Multi-layer regulatory dysregulation:</strong>
-                Integrative framework for decoding multi-layer molecular dysregulation across brain aging and neurological disease. 
-                Establishing population-scale single-cell and spatial foundations spanning genome, epigenome, and transcriptome.
-              </p>
-            </div>
-            <div class="direction-item">
-              <span class="item-number num-red">2</span>
-              <p><strong>Circadian disruption &amp; temporal dynamics:</strong> 
-                Decoding circadian disruption in brain aging and neurodegeneration — mapping cell-type-specific circadian regulatory programs, AI-driven circadian time prediction, and circadian misalignment in disease.</p>
-            </div>
-            <div class="direction-item">
-              <span class="item-number num-red">3</span>
-              <p><strong>Transposable elements &amp; genomic dark matter:</strong> Regulatory circuitry of transposable elements in the brain and their dysregulation linking epigenomic erosion to LINE1 activation and cellular vulnerability in neurodegenerative disease.</p>
-            </div>
+        <p class="direction-summary">From degeneration to regeneration — restoring cellular and tissue function to counter degeneration. An integrative framework bridging single-cell genomics, multi-omics, biomedical informatics, and experimental validation.</p>
+        <div class="direction-items">
+          <div class="direction-item">
+            <span class="item-number num-green">1</span>
+            <p><strong>Safeguarding the genome and epigenome:</strong> Nuclear guardians of genome–epigenome integrity. Multimodal "Regulatory Funnel" model to discover novel epigenomic regulators and stabilizers; AI screening of candidate stabilizers using in silico models and 3D human systems.</p>
+          </div>
+          <div class="direction-item">
+            <span class="item-number num-green">2</span>
+            <p><strong>Targeted Cellular Rejuvenation &amp; Regeneration:</strong> Resetting glial fate to restore repair-supportive capacity. Defining glial activation–exhaustion trajectories, identifying fate-shifting regulators, and glial engineering for niche restoration and tissue regeneration.</p>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Direction 2 — GREEN -->
-    <div class="direction-card direction-green">
-      <div class="direction-inner">
-        <div class="direction-image">
-          <img src="https://zunpengliu.github.io/Directions/Direction2.png" alt="Direction 2 Schema">
-        </div>
-        <div class="direction-text">
-          <span class="direction-badge badge-green">DIRECTION 2</span>
-          <h3>Reopening the Road to Rejuvenation</h3>
-          <p class="direction-summary">
-            From degeneration to regeneration — restoring cellular and tissue function to counter degeneration. An integrative framework bridging single-cell genomics, multi-omics, biomedical informatics, and experimental validation.
-          </p>
-          <div class="direction-items">
-            <div class="direction-item">
-              <span class="item-number num-green">1</span>
-              <p><strong>Safeguarding the genome and epigenome:</strong> Nuclear guardians of genome–epigenome integrity. Multimodal "Regulatory Funnel" model to discover novel epigenomic regulators and stabilizers; AI screening of candidate stabilizers using in silico models and 3D human systems.</p>
-            </div>
-            <div class="direction-item">
-              <span class="item-number num-green">2</span>
-              <p><strong>Targeted Cellular Rejuvenation &amp; Regeneration:</strong> Resetting glial fate to restore repair-supportive capacity. Defining glial activation–exhaustion trajectories, identifying fate-shifting regulators, and glial engineering for niche restoration and tissue regeneration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Direction 3 — BLUE -->
-    <div class="direction-card direction-blue">
-      <div class="direction-inner">
-        <div class="direction-image">
-          <img src="https://zunpengliu.github.io/Directions/Direction3.png" alt="Direction 3 Schema">
-        </div>
-        <div class="direction-text">
-          <span class="direction-badge badge-blue">DIRECTION 3</span>
-          <h3>Navigating from Predictive Modeling to Therapeutics</h3>
-          <p class="direction-summary">
-            An integrated framework from degeneration to regeneration and therapeutic design — leveraging AI foundation models, generative inference, and drug discovery.
-          </p>
-          <div class="direction-items">
-            <div class="direction-item">
-              <span class="item-number num-blue">1</span>
-              <p><strong>Modeling &amp; prediction of aging:</strong> Single-cell and spatial foundation models for prediction at individual, cell, and spatial hotspot/niche levels. Biological interpretability for mechanism, cellular basis, molecular hallmarks, and therapeutic targets. Ultimate goal: non-invasive prediction.</p>
-            </div>
-            <div class="direction-item">
-              <span class="item-number num-blue">2</span>
-              <p><strong>"Virtual Aging Brain" — GenAI:</strong> Cross-modal generative genomics inference and in silico perturbation using perturb-encoder/decoder architecture. Generate testable hypotheses, candidate intervention targets, and rejuvenation strategies.</p>
-            </div>
-            <div class="direction-item">
-              <span class="item-number num-blue">3</span>
-              <p><strong>Therapeutic design &amp; evaluation:</strong> AI-guided drug discovery and repurposing, in vitro 2D + 3D organoid perturbation + imaging, in vivo validation, and translational potential.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </section>
-
-
-
-<!-- PUBLICATIONS -->
-<section class="pubs" id="publications">
-    <div class="ctn">
-    <div class="shdr">
-      <div class="slbl">Publications</div>
-      <h2>Selected Publications</h2>
-      <p>Full list on <a href="https://scholar.google.com/citations?user=Yk4VxGQAAAAJ&hl=en" style="color:var(--accent);font-weight:600" target="_blank">Google Scholar ↗</a></p>
-    </div>
-    
-    <!-- TABS -->
-    <div class="pub-tabs">
-      <button class="pub-tab active" onclick="switchTab('first', this)">First / Co-First / Corresponding Author</button>
-      <button class="pub-tab" onclick="switchTab('top', this)">Selected Co-Author </button>
-      <button class="pub-tab" onclick="switchTab('top', this)">Reviews / Perspectives </button>
-      <button class="pub-tab" onclick="switchTab('top', this)">Preprents </button>
-    </div>
-    
-    <!-- ====== FIRST AUTHOR LIST ====== -->
-    <div class="pub-list ptab" id="tab-first">
-    
-    <!-- 1 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2026</span></div>
-    <div class="pub-t">Circadian misalignment underlies immune escape in breast cancer</div>
-    <div class="pub-a">Liang C#, <strong>Liu Z#</strong>, Xu X#, Xu Z, Zhang Q, Zhang T, ... Kellis M*, Brown M*</div>
-    <div class="pub-v"><strong>Cell</strong>, 2026. (Under review)</div>
-    </div>
-    
-    <!-- 2 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2025</span></div>
-    <div class="pub-t">Single-cell multiregion epigenomic rewiring in Alzheimer's disease progression and cognitive resilience</div>
-    <div class="pub-a"><strong>Liu Z#,*</strong>, Zhang S#, James BT, Galani K, Mangan RJ, Fass SB, ... Tsai LH*, Kellis M*</div>
-    <div class="pub-v"><strong>Cell</strong>, 2025, 188(18):4980-5002.e29</div>
-    <div class="pub-hl">
-      <a href="https://news.mit.edu/2025/alzheimers-erodes-brain-cells-control-gene-expression-undermining-function-cognition-0908" target="_blank" class="pub-hlt hl-news"> MIT News</a>
-      <a href="https://picower.mit.edu/news/alzheimers-erodes-brain-cells-control-gene-expression-undermining-function-cognition" target="_blank"class="pub-hlt hl-news"> Picower Institute News</a>
-    </div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.cell.2025.06.031" class="pub-lk" target="_blank">Paper ↗</a></div>
-   
-    <!-- Graphic Abstract + Highlights -->
-    <div class="pub-extra">
-      <div class="pub-ga">
-        <img src="https://zunpengliu.github.io/Publications/ga-cell-2025.jpg" alt="Graphic Abstract - Cell 2025">
-      </div>
-      <div class="pub-key">
-
-        <h5>Highlights</h5>
-        <ul>
-          <li>Single-cell epigenomic and transcriptomic dissection of AD across six brain regions</li>
-          <li>Widespread epigenomic relaxation and information loss during AD progression</li>
-          <li>Epigenomic information dynamics link to glial activation and exhaustion</li>
-          <li>Epigenomic stability correlates positively with cognitive resilience and declines with AD pathology</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-
-    
-    <!-- 3 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2023</span></div>
-    <div class="pub-t">Resurrection of endogenous retroviruses during aging reinforces senescence</div>
-    <div class="pub-a">Liu X#, <strong>Liu Z#</strong>, Wu Z#, Ren J#, ... Izpisua Belmonte JC, Zhang W*, Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Cell</strong>, 2023, 186(2): 287-304.e26</div>
-    <div class="pub-hl">
-      <span class="pub-hlt hl-top">2023 Top 10 Scientific Advances in China</span>
-      <span class="pub-hlt hl-top">2023 Top 10 Advances in Life Sciences</span>
-      <span class="pub-hlt hl-top">2023 Major Medical Advances in China</span>
-    </div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.cell.2022.12.017" class="pub-lk" target="_blank">Paper ↗</a></div>
-
-    <!-- Graphic Abstract + Highlights -->
-    <div class="pub-extra">
-      <div class="pub-ga">
-        <img src="https://zunpengliu.github.io/Publications/ga-cell-2023.jpg" alt="Graphic Abstract - Cell 2023">
-      </div>
-      <div class="pub-key">
-
-        <h5>Highlights</h5>
-        <ul>
-          <li>Derepression of the endogenous retrovirus contributes to programmed aging</li>
-          <li>Upregulation of HERVK triggers the innate immune response and cellular senescence</li>
-          <li>Extracellular HERVK retrovirus-like particles induce senescence in young cells</li>
-          <li>Endogenous retrovirus serves as a potential target to alleviate aging</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-
-    <!-- 4 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2022</span></div>
-    <div class="pub-t">Large-scale chromatin reorganization reactivates placenta-specific genes that drive cellular aging</div>
-    <div class="pub-a"><strong>Liu Z#</strong>, Ji Q#, Ren J#, Yan P#, Wu Z#, ... Qu J*, Zhang W*, Liu GH*</div>
-    <div class="pub-v"><strong>Developmental Cell</strong>, 2022, 57(11): 1347-1368.e12</div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.devcel.2022.05.004" class="pub-lk" target="_blank">Paper ↗</a></div>
-    <!-- Graphic Abstract + Highlights -->
-    <div class="pub-extra">
-      <div class="pub-ga">
-        <img src="https://zunpengliu.github.io/Publications/ga-dc-2022.jpg" alt="Graphic Abstract - Developmental Cell 2022">
-      </div>
-      <div class="pub-key">
-
-        <h5>Highlights</h5>
-        <ul>
-          <li>A comprehensive survey of the aging epigenome across the chromatin hierarchy</li>
-          <li>An overall increase in chromatin entropy and epigenetic instability with aging</li>
-          <li>Consequent reactivation of PSGs due to heterochromatin erosion during aging</li>
-          <li>Reactivated PSGs as a hallmark and potential driver of human cellular aging</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    
-    <!-- 5 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2022</span></div>
-    <div class="pub-t">Cross-species metabolomic analysis identifies uridine as a potent regeneration promoting factor</div>
-    <div class="pub-a"><strong>Liu Z#</strong>, Li W#, Geng L#, Sun L#, Wang Q#, Yu Y#, ... Zhang W*, Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Cell Discovery</strong>, 2022, 8(1):6</div>
-    <div class="pub-links"><a href="https://doi.org/10.1038/s41421-021-00361-3" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 6 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2025</span></div>
-    <div class="pub-t">Nuclear lamins-guided plastic positioning and folding of the human genome</div>
-    <div class="pub-a">Wang Z#, Ji Q#, <strong>Liu Z#</strong>, Jiao C#, ... Zhang W*, Liu GH*, Qu J*</div>
-    <div class="pub-v"><strong>Cell Reports</strong>, 2025, 44(11): 116529</div>
-    <div class="pub-links"><a href="https://www.cell.com/cell-reports/fulltext/S2211-1247%2825%2901300-2" class="pub-lk" target="_blank">Paper ↗</a></div>
-    
-    <!-- Graphic Abstract + Highlights -->
-    <div class="pub-extra">
-      <div class="pub-ga">
-        <img src="https://zunpengliu.github.io/Publications/ga-cellreports-2025.jpg" alt="Graphic Abstract - Cell Reports 2025">
-      </div>
-      <div class="pub-key">
-
-        <h5>Highlights</h5>
-        <ul>
-          <li>Lamins maintain large-scale 3D genome architecture in human mesenchymal stem cells</li>
-          <li>A- and B-type lamins collaborate to anchor chromatin at the nuclear periphery</li>
-          <li>Lamin A interacts with SON to position nuclear speckles and sustain transcription</li>
-          <li>A laminopathy-linked lamin A mutation disrupts SON binding and genome organization</li>
-        </ul>
-      </div>
-    </div>
-    </div>  
-    
-    <!-- 7 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2022</span></div>
-    <div class="pub-t">BMAL1 moonlighting as a gatekeeper for LINE1 repression and cellular senescence in primates</div>
-    <div class="pub-a">Liang C#, Ke Q#, <strong>Liu Z#</strong>, Ren J#, Zhang W#, ... Qu J*, Xiang AP*, Liu GH*</div>
-    <div class="pub-v"><strong>Nucleic Acids Research</strong>, 2022, 50(6): 3323–3347</div>
-    <div class="pub-links"><a href="https://academic.oup.com/nar/article/50/6/3323/6548307?login=true" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 8 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2021</span></div>
-    <div class="pub-t">Stabilization of heterochromatin by CLOCK promotes stem cell rejuvenation and cartilage regeneration</div>
-    <div class="pub-a">Liang C#, <strong>Liu Z#</strong>, Song M#, ... Zhang W*, Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Cell Research</strong>, 2021, 31(2):187-205</div>
-    <div class="pub-hl"><span class="pub-hlt hl-top">2022 Top 10 Advances in Life Sciences in China</span></div>
-    <div class="pub-links"><a href="https://doi.org/10.1038/s41422-020-0385-7" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 9 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2021</span></div>
-    <div class="pub-t">Aging Atlas: a multi-omics database for aging biology</div>
-    <div class="pub-a">Aging Atlas Consortium</div>
-    <div class="pub-v"><strong>Nucleic Acids Research</strong>, 2021, 49(D1): D825-D830</div>
-    <div class="pub-links"><a href="https://doi.org/10.1093/nar/gkaa894" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 10 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2020</span></div>
-    <div class="pub-t">Genome-wide R-loop landscapes during cell differentiation and reprogramming</div>
-    <div class="pub-a">Yan P#, <strong>Liu Z#</strong>, Song M#, ... Zhang W*, Sun Q*, Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Cell Reports</strong>, 2020, 32(1): 107870</div>
-    <div class="pub-hl"><span class="pub-hlt hl-feat">⭐ F1000Research Recommended</span></div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.celrep.2020.107870" class="pub-lk" target="_blank">Paper ↗</a></div>
-
-    <!-- Graphic Abstract + Highlights -->
-    <div class="pub-extra">
-      <div class="pub-ga">
-        <img src="https://zunpengliu.github.io/Publications/ga-cellreports-2020.jpg" alt="Graphic Abstract - Cell Reports 2020">
-      </div>
-      <div class="pub-key">
-
-        <h5>Highlights</h5>
-        <ul>
-          <li>Joint analysis of R-loops and six epigenomic maps in hPSCs and their derivatives</li>
-          <li>R-loops cooperate with DNA and histone modifications to regulate cell fate determination</li>
-          <li>Unscheduled R-loops retain some originating cell characteristics after reprogramming</li>
-        </ul>
-      </div>
-    </div>
-    </div>  
-    
-    <!-- 11 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2020</span></div>
-    <div class="pub-t">SIRT7 antagonizes human stem cell aging as a heterochromatin stabilizer</div>
-    <div class="pub-a">Bi S#, <strong>Liu Z#</strong>, Wu Z, ... Zhang W*, Song M*, Liu GH*, Qu J*</div>
-    <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2020, 11(7): 483-504</div>
-    <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s13238-020-00728-4" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 12 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2019</span></div>
-    <div class="pub-t">Stabilizing heterochromatin by DGCR8 alleviates senescence and osteoarthritis</div>
-    <div class="pub-a">Deng L#, Ren R#, <strong>Liu Z#</strong>, Song M#, ... Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Nature Communications</strong>, 2019, 10(1): 3329</div>
-    <div class="pub-links"><a href="https://doi.org/10.1038/s41467-019-10831-8" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 13 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2019</span></div>
-    <div class="pub-t">Telomere-dependent and telomere-independent roles of RAP1 in regulating human stem cell homeostasis</div>
-    <div class="pub-a">Zhang X#, <strong>Liu Z#</strong>, Liu X, ... Zhang W*, Song M*, Liu GH*, Qu J*</div>
-    <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 649-667</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-0610-7" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 14 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2019</span></div>
-    <div class="pub-t">Chemical screen identifies a geroprotective role of quercetin in premature aging</div>
-    <div class="pub-a">Geng L#, <strong>Liu Z#</strong>, Zhang W#*, ... Song M*, Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10(6): 417-435</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s13238-018-0567-y" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 15 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2019</span></div>
-    <div class="pub-t">Low-dose quercetin positively regulates mouse healthspan</div>
-    <div class="pub-a">Geng L#, <strong>Liu Z#</strong>, Wang S, ... Song M*, Zhang W*, Liu GH*, Qu J*</div>
-    <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 770-775</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-0646-8" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 16 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2019</span></div>
-    <div class="pub-t">Modeling CADASIL vascular pathologies with patient-derived induced pluripotent stem cells</div>
-    <div class="pub-a">Ling C#, <strong>Liu Z#</strong>, Song M#, ... Qu J*, Yuan Y*, Liu GH*</div>
-    <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 249-271</div>
-    <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-0608-1" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 17 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2019</span></div>
-    <div class="pub-t">DJ-1 is dispensable for human stem cell homeostasis</div>
-    <div class="pub-a">Cheng F#, Wang S#, Song M#, <strong>Liu Z#</strong>, ... Zhang W*, Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 846-853</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-00659-9" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <!-- 18 -->
-    <div class="pub feat">
-    <div class="pub-meta"><span class="pub-yr">2018</span></div>
-    <div class="pub-t">CRISPR/Cas9-mediated gene knockout reveals a guardian role of NF-κB/RelA in maintaining the homeostasis of human vascular cells</div>
-    <div class="pub-a">Wang P#, <strong>Liu Z#</strong>, Zhang X#, ... Liu GH*, Zhang W*, Song M*, Qu J*</div>
-    <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2018, 9: 945-965</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s13238-018-0560-5" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    </div>
-    
-    <!-- ====== TOP CO-AUTHOR LIST ====== -->
-    <div class="pub-list ptab" id="tab-top" style="display:none">
-    
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2025</span></div>
-    <div class="pub-t">Systematic profiling reveals betaine as an exercise mimetic for geroprotection</div>
-    <div class="pub-a">Geng L#, Ping J#, Wu R#, ... <strong>Liu Z</strong>, ... Wang S*, Jing Q*, Song M*, Liu G*</div>
-    <div class="pub-v"><strong>Cell</strong>, 2025, 188(19): 5403-5425.e33</div>
-    <div class="pub-links"><a href="https://www.cell.com/cell/abstract/S0092-8674(25)00635-X" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2020</span></div>
-    <div class="pub-t">Single-cell transcriptomic atlas of primate ovarian aging</div>
-    <div class="pub-a">Wang S#, Zheng Y#, Li J#, Yu Y#, Zhang W#, Song M, <strong>Liu Z</strong>, ... Izpisua Belmonte JC*, Qu J*, Tang F*, Liu GH*</div>
-    <div class="pub-v"><strong>Cell</strong>, 2020, 180: 585-600.e19</div>
-    <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.cell.2020.01.009" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2018</span></div>
-    <div class="pub-t">SIRT6 deficiency results in developmental retardation in cynomolgus monkeys</div>
-    <div class="pub-a">Zhang W#, Wan H#, Feng G#, Qu J#, ... <strong>Liu Z</strong>, ... Li W*, Liu GH*, Hu B*</div>
-    <div class="pub-v"><strong>Nature</strong>, 2018, 560: 661-665</div>
-    <div class="pub-links"><a href="https://doi.org/10.1038/s41586-018-0437-z" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
+  </div>
   
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2024</span></div>
-    <div class="pub-t">A versatile informative diffusion model for single-cell ATAC-seq data generation and analysis</div>
-    <div class="pub-a">Huang L, Xiong L, Sun N, <strong>Liu Z</strong>, Wong KC, Kellis M</div>
-    <div class="pub-v"><strong>NeurIPS</strong>, 2024</div>
-    <div class="pub-links"><a href="https://neurips.cc/virtual/2024/poster/95129" class="pub-lk" target="_blank">Paper ↗</a></div>
+  <!-- Direction 3 — BLUE -->
+  <div class="direction-card direction-blue">
+    <div class="direction-inner">
+      <div class="direction-image">
+        <img src="https://zunpengliu.github.io/Directions/Direction3.png" alt="Direction 3 Schema">
+      </div>
+      <div class="direction-text">
+        <span class="direction-badge badge-blue">DIRECTION 3</span>
+        <h3>Navigating from Predictive Modeling to Therapeutics</h3>
+        <p class="direction-summary">An integrated framework from degeneration to regeneration and therapeutic design — leveraging AI foundation models, generative inference, and drug discovery.</p>
+        <div class="direction-items">
+          <div class="direction-item">
+            <span class="item-number num-blue">1</span>
+            <p><strong>Modeling &amp; prediction of aging:</strong> Single-cell and spatial foundation models for prediction at individual, cell, and spatial hotspot/niche levels. Biological interpretability for mechanism, cellular basis, molecular hallmarks, and therapeutic targets. Ultimate goal: non-invasive prediction.</p>
+          </div>
+          <div class="direction-item">
+            <span class="item-number num-blue">2</span>
+            <p><strong>"Virtual Aging Brain" — GenAI:</strong> Cross-modal generative genomics inference and in silico perturbation using perturb-encoder/decoder architecture. Generate testable hypotheses, candidate intervention targets, and rejuvenation strategies.</p>
+          </div>
+          <div class="direction-item">
+            <span class="item-number num-blue">3</span>
+            <p><strong>Therapeutic design &amp; evaluation:</strong> AI-guided drug discovery and repurposing, in vitro 2D + 3D organoid perturbation + imaging, in vivo validation, and translational potential.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  
+  </div>
+  </section>
+  
+  <!-- PUBLICATIONS -->
+  <section class="pubs" id="publications">
+  <div class="ctn">
+  <div class="shdr">
+    <div class="slbl">Publications</div>
+    <h2>Selected Publications</h2>
+    <p>Full list on <a href="https://scholar.google.com/citations?user=Yk4VxGQAAAAJ&hl=en" style="color:var(--accent);font-weight:600" target="_blank">Google Scholar ↗</a></p>
+  </div>
+  
+  <!-- TABS -->
+  <div class="pub-tabs">
+    <button class="pub-tab active" onclick="switchTab('first', this)">First / Co-First / Corresponding Author</button>
+    <button class="pub-tab" onclick="switchTab('top', this)">Selected Co-Author</button>
+    <button class="pub-tab" onclick="switchTab('review', this)">Reviews / Perspectives</button>
+    <button class="pub-tab" onclick="switchTab('preprint', this)">Preprints</button>
+  </div>
+  
+  <!-- ====== FIRST AUTHOR LIST ====== -->
+  <div class="pub-list ptab" id="tab-first">
+  
+  <!-- 1 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2026</span></div>
+  <div class="pub-t">Circadian misalignment underlies immune escape in breast cancer</div>
+  <div class="pub-a">Liang C#, <strong>Liu Z#</strong>, Xu X#, Xu Z, Zhang Q, Zhang T, ... Kellis M*, Brown M*</div>
+  <div class="pub-v"><strong>Cell</strong>, 2026. (Under review)</div>
+  </div>
+  
+  <!-- 2 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2025</span></div>
+  <div class="pub-t">Single-cell multiregion epigenomic rewiring in Alzheimer's disease progression and cognitive resilience</div>
+  <div class="pub-a"><strong>Liu Z#,*</strong>, Zhang S#, James BT, Galani K, Mangan RJ, Fass SB, ... Tsai LH*, Kellis M*</div>
+  <div class="pub-v"><strong>Cell</strong>, 2025, 188(18):4980-5002.e29</div>
+  <div class="pub-hl">
+    <a href="https://news.mit.edu/2025/alzheimers-erodes-brain-cells-control-gene-expression-undermining-function-cognition-0908" target="_blank" class="pub-hlt hl-news">MIT News</a>
+    <a href="https://picower.mit.edu/news/alzheimers-erodes-brain-cells-control-gene-expression-undermining-function-cognition" target="_blank" class="pub-hlt hl-news">Picower Institute News</a>
+  </div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.cell.2025.06.031" class="pub-lk" target="_blank">Paper ↗</a></div>
+  <div class="pub-extra">
+    <div class="pub-ga"><img src="https://zunpengliu.github.io/Publications/ga-cell-2025.jpg" alt="Graphic Abstract - Cell 2025"></div>
+    <div class="pub-key">
+      <h5>Highlights</h5>
+      <ul>
+        <li>Single-cell epigenomic and transcriptomic dissection of AD across six brain regions</li>
+        <li>Widespread epigenomic relaxation and information loss during AD progression</li>
+        <li>Epigenomic information dynamics link to glial activation and exhaustion</li>
+        <li>Epigenomic stability correlates positively with cognitive resilience and declines with AD pathology</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+  <!-- 3 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2023</span></div>
+  <div class="pub-t">Resurrection of endogenous retroviruses during aging reinforces senescence</div>
+  <div class="pub-a">Liu X#, <strong>Liu Z#</strong>, Wu Z#, Ren J#, ... Izpisua Belmonte JC, Zhang W*, Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Cell</strong>, 2023, 186(2): 287-304.e26</div>
+  <div class="pub-hl">
+    <span class="pub-hlt hl-top">2023 Top 10 Scientific Advances in China</span>
+    <span class="pub-hlt hl-top">2023 Top 10 Advances in Life Sciences</span>
+    <span class="pub-hlt hl-top">2023 Major Medical Advances in China</span>
+  </div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.cell.2022.12.017" class="pub-lk" target="_blank">Paper ↗</a></div>
+  <div class="pub-extra">
+    <div class="pub-ga"><img src="https://zunpengliu.github.io/Publications/ga-cell-2023.jpg" alt="Graphic Abstract - Cell 2023"></div>
+    <div class="pub-key">
+      <h5>Highlights</h5>
+      <ul>
+        <li>Derepression of the endogenous retrovirus contributes to programmed aging</li>
+        <li>Upregulation of HERVK triggers the innate immune response and cellular senescence</li>
+        <li>Extracellular HERVK retrovirus-like particles induce senescence in young cells</li>
+        <li>Endogenous retrovirus serves as a potential target to alleviate aging</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+  <!-- 4 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2022</span></div>
+  <div class="pub-t">Large-scale chromatin reorganization reactivates placenta-specific genes that drive cellular aging</div>
+  <div class="pub-a"><strong>Liu Z#</strong>, Ji Q#, Ren J#, Yan P#, Wu Z#, ... Qu J*, Zhang W*, Liu GH*</div>
+  <div class="pub-v"><strong>Developmental Cell</strong>, 2022, 57(11): 1347-1368.e12</div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.devcel.2022.05.004" class="pub-lk" target="_blank">Paper ↗</a></div>
+  <div class="pub-extra">
+    <div class="pub-ga"><img src="https://zunpengliu.github.io/Publications/ga-dc-2022.jpg" alt="Graphic Abstract - Developmental Cell 2022"></div>
+    <div class="pub-key">
+      <h5>Highlights</h5>
+      <ul>
+        <li>A comprehensive survey of the aging epigenome across the chromatin hierarchy</li>
+        <li>An overall increase in chromatin entropy and epigenetic instability with aging</li>
+        <li>Consequent reactivation of PSGs due to heterochromatin erosion during aging</li>
+        <li>Reactivated PSGs as a hallmark and potential driver of human cellular aging</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+  <!-- 5 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2022</span></div>
+  <div class="pub-t">Cross-species metabolomic analysis identifies uridine as a potent regeneration promoting factor</div>
+  <div class="pub-a"><strong>Liu Z#</strong>, Li W#, Geng L#, Sun L#, Wang Q#, Yu Y#, ... Zhang W*, Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Cell Discovery</strong>, 2022, 8(1):6</div>
+  <div class="pub-links"><a href="https://doi.org/10.1038/s41421-021-00361-3" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 6 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2025</span></div>
+  <div class="pub-t">Nuclear lamins-guided plastic positioning and folding of the human genome</div>
+  <div class="pub-a">Wang Z#, Ji Q#, <strong>Liu Z#</strong>, Jiao C#, ... Zhang W*, Liu GH*, Qu J*</div>
+  <div class="pub-v"><strong>Cell Reports</strong>, 2025, 44(11): 116529</div>
+  <div class="pub-links"><a href="https://www.cell.com/cell-reports/fulltext/S2211-1247%2825%2901300-2" class="pub-lk" target="_blank">Paper ↗</a></div>
+  <div class="pub-extra">
+    <div class="pub-ga"><img src="https://zunpengliu.github.io/Publications/ga-cellreports-2025.jpg" alt="Graphic Abstract - Cell Reports 2025"></div>
+    <div class="pub-key">
+      <h5>Highlights</h5>
+      <ul>
+        <li>Lamins maintain large-scale 3D genome architecture in human mesenchymal stem cells</li>
+        <li>A- and B-type lamins collaborate to anchor chromatin at the nuclear periphery</li>
+        <li>Lamin A interacts with SON to position nuclear speckles and sustain transcription</li>
+        <li>A laminopathy-linked lamin A mutation disrupts SON binding and genome organization</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+  <!-- 7 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2022</span></div>
+  <div class="pub-t">BMAL1 moonlighting as a gatekeeper for LINE1 repression and cellular senescence in primates</div>
+  <div class="pub-a">Liang C#, Ke Q#, <strong>Liu Z#</strong>, Ren J#, Zhang W#, ... Qu J*, Xiang AP*, Liu GH*</div>
+  <div class="pub-v"><strong>Nucleic Acids Research</strong>, 2022, 50(6): 3323–3347</div>
+  <div class="pub-links"><a href="https://academic.oup.com/nar/article/50/6/3323/6548307?login=true" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 8 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2021</span></div>
+  <div class="pub-t">Stabilization of heterochromatin by CLOCK promotes stem cell rejuvenation and cartilage regeneration</div>
+  <div class="pub-a">Liang C#, <strong>Liu Z#</strong>, Song M#, ... Zhang W*, Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Cell Research</strong>, 2021, 31(2):187-205</div>
+  <div class="pub-hl"><span class="pub-hlt hl-top">2022 Top 10 Advances in Life Sciences in China</span></div>
+  <div class="pub-links"><a href="https://doi.org/10.1038/s41422-020-0385-7" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 9 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2021</span></div>
+  <div class="pub-t">Aging Atlas: a multi-omics database for aging biology</div>
+  <div class="pub-a">Aging Atlas Consortium</div>
+  <div class="pub-v"><strong>Nucleic Acids Research</strong>, 2021, 49(D1): D825-D830</div>
+  <div class="pub-links"><a href="https://doi.org/10.1093/nar/gkaa894" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 10 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2020</span></div>
+  <div class="pub-t">Genome-wide R-loop landscapes during cell differentiation and reprogramming</div>
+  <div class="pub-a">Yan P#, <strong>Liu Z#</strong>, Song M#, ... Zhang W*, Sun Q*, Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Cell Reports</strong>, 2020, 32(1): 107870</div>
+  <div class="pub-hl"><span class="pub-hlt hl-feat">⭐ F1000Research Recommended</span></div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.celrep.2020.107870" class="pub-lk" target="_blank">Paper ↗</a></div>
+  <div class="pub-extra">
+    <div class="pub-ga"><img src="https://zunpengliu.github.io/Publications/ga-cellreports-2020.jpg" alt="Graphic Abstract - Cell Reports 2020"></div>
+    <div class="pub-key">
+      <h5>Highlights</h5>
+      <ul>
+        <li>Joint analysis of R-loops and six epigenomic maps in hPSCs and their derivatives</li>
+        <li>R-loops cooperate with DNA and histone modifications to regulate cell fate determination</li>
+        <li>Unscheduled R-loops retain some originating cell characteristics after reprogramming</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+  <!-- 11 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2020</span></div>
+  <div class="pub-t">SIRT7 antagonizes human stem cell aging as a heterochromatin stabilizer</div>
+  <div class="pub-a">Bi S#, <strong>Liu Z#</strong>, Wu Z, ... Zhang W*, Song M*, Liu GH*, Qu J*</div>
+  <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2020, 11(7): 483-504</div>
+  <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
+  <div class="pub-links"><a href="https://doi.org/10.1007/s13238-020-00728-4" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 12 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2019</span></div>
+  <div class="pub-t">Stabilizing heterochromatin by DGCR8 alleviates senescence and osteoarthritis</div>
+  <div class="pub-a">Deng L#, Ren R#, <strong>Liu Z#</strong>, Song M#, ... Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Nature Communications</strong>, 2019, 10(1): 3329</div>
+  <div class="pub-links"><a href="https://doi.org/10.1038/s41467-019-10831-8" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 13 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2019</span></div>
+  <div class="pub-t">Telomere-dependent and telomere-independent roles of RAP1 in regulating human stem cell homeostasis</div>
+  <div class="pub-a">Zhang X#, <strong>Liu Z#</strong>, Liu X, ... Zhang W*, Song M*, Liu GH*, Qu J*</div>
+  <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 649-667</div>
+  <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-0610-7" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 14 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2019</span></div>
+  <div class="pub-t">Chemical screen identifies a geroprotective role of quercetin in premature aging</div>
+  <div class="pub-a">Geng L#, <strong>Liu Z#</strong>, Zhang W#*, ... Song M*, Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10(6): 417-435</div>
+  <div class="pub-links"><a href="https://doi.org/10.1007/s13238-018-0567-y" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 15 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2019</span></div>
+  <div class="pub-t">Low-dose quercetin positively regulates mouse healthspan</div>
+  <div class="pub-a">Geng L#, <strong>Liu Z#</strong>, Wang S, ... Song M*, Zhang W*, Liu GH*, Qu J*</div>
+  <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 770-775</div>
+  <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-0646-8" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 16 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2019</span></div>
+  <div class="pub-t">Modeling CADASIL vascular pathologies with patient-derived induced pluripotent stem cells</div>
+  <div class="pub-a">Ling C#, <strong>Liu Z#</strong>, Song M#, ... Qu J*, Yuan Y*, Liu GH*</div>
+  <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 249-271</div>
+  <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
+  <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-0608-1" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 17 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2019</span></div>
+  <div class="pub-t">DJ-1 is dispensable for human stem cell homeostasis</div>
+  <div class="pub-a">Cheng F#, Wang S#, Song M#, <strong>Liu Z#</strong>, ... Zhang W*, Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2019, 10: 846-853</div>
+  <div class="pub-links"><a href="https://doi.org/10.1007/s13238-019-00659-9" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <!-- 18 -->
+  <div class="pub feat">
+  <div class="pub-meta"><span class="pub-yr">2018</span></div>
+  <div class="pub-t">CRISPR/Cas9-mediated gene knockout reveals a guardian role of NF-κB/RelA in maintaining the homeostasis of human vascular cells</div>
+  <div class="pub-a">Wang P#, <strong>Liu Z#</strong>, Zhang X#, ... Liu GH*, Zhang W*, Song M*, Qu J*</div>
+  <div class="pub-v"><strong>Protein &amp; Cell</strong>, 2018, 9: 945-965</div>
+  <div class="pub-links"><a href="https://doi.org/10.1007/s13238-018-0560-5" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  </div>
+  
+  <!-- ====== TOP CO-AUTHOR LIST ====== -->
+  <div class="pub-list ptab" id="tab-top" style="display:none">
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2025</span></div>
+  <div class="pub-t">Systematic profiling reveals betaine as an exercise mimetic for geroprotection</div>
+  <div class="pub-a">Geng L#, Ping J#, Wu R#, ... <strong>Liu Z</strong>, ... Wang S*, Jing Q*, Song M*, Liu G*</div>
+  <div class="pub-v"><strong>Cell</strong>, 2025, 188(19): 5403-5425.e33</div>
+  <div class="pub-links"><a href="https://www.cell.com/cell/abstract/S0092-8674(25)00635-X" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2020</span></div>
+  <div class="pub-t">Single-cell transcriptomic atlas of primate ovarian aging</div>
+  <div class="pub-a">Wang S#, Zheng Y#, Li J#, Yu Y#, Zhang W#, Song M, <strong>Liu Z</strong>, ... Izpisua Belmonte JC*, Qu J*, Tang F*, Liu GH*</div>
+  <div class="pub-v"><strong>Cell</strong>, 2020, 180: 585-600.e19</div>
+  <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.cell.2020.01.009" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2018</span></div>
+  <div class="pub-t">SIRT6 deficiency results in developmental retardation in cynomolgus monkeys</div>
+  <div class="pub-a">Zhang W#, Wan H#, Feng G#, Qu J#, ... <strong>Liu Z</strong>, ... Li W*, Liu GH*, Hu B*</div>
+  <div class="pub-v"><strong>Nature</strong>, 2018, 560: 661-665</div>
+  <div class="pub-links"><a href="https://doi.org/10.1038/s41586-018-0437-z" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2024</span></div>
+  <div class="pub-t">A versatile informative diffusion model for single-cell ATAC-seq data generation and analysis</div>
+  <div class="pub-a">Huang L, Xiong L, Sun N, <strong>Liu Z</strong>, Wong KC, Kellis M</div>
+  <div class="pub-v"><strong>NeurIPS</strong>, 2024</div>
+  <div class="pub-links"><a href="https://neurips.cc/virtual/2024/poster/95129" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2024</span></div>
+  <div class="pub-t">The sirtuin-associated human senescence program converges on the activation of placenta-specific gene PAPPA</div>
+  <div class="pub-a">Bi S#, Jiang X#, Ji Q#, ... <strong>Liu Z</strong>, ... Zhang W*, Liu GH*, Qu J*</div>
+  <div class="pub-v"><strong>Developmental Cell</strong>, 2024, 59(8):991-1009</div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.devcel.2024.02.008" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2023</span></div>
+  <div class="pub-t">Genome-wide CRISPR activation screening in senescent cells reveals SOX5 as a driver and therapeutic target of rejuvenation</div>
+  <div class="pub-a">Jing Y#, Jiang X#, Ji Q, ... <strong>Liu Z</strong>, ... Ren J*, Zhang W*, Qu J*, Liu GH*</div>
+  <div class="pub-v"><strong>Cell Stem Cell</strong>, 2023, 30(11): 1452-1471.e10</div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.stem.2023.09.007" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2023</span></div>
+  <div class="pub-t">SIRT2 counteracts primate cardiac aging via deacetylation of STAT3 that silences CDKN2B</div>
+  <div class="pub-a">Ye Yan#, Yang K#, Liu H#, Yu Y#, Song M#, ... <strong>Liu Z</strong>, ... Qu J*, Zhang W*, Liu GH*</div>
+  <div class="pub-v"><strong>Nature Aging</strong>, 2023, 3(10):1269-1287</div>
+  <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
+  <div class="pub-links"><a href="https://doi.org/10.1038/s43587-023-00486-y" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2023</span></div>
+  <div class="pub-t">m⁶A epitranscriptomic regulation of tissue homeostasis during primate aging</div>
+  <div class="pub-a">Wu Z#, Lu M#, Liu D#, ... <strong>Liu Z</strong>, ... Qu J*, Zhang W*, Ci W*, Liu GH*</div>
+  <div class="pub-v"><strong>Nature Aging</strong>, 2023, 3(6):705-721</div>
+  <div class="pub-links"><a href="https://doi.org/10.1038/s43587-023-00393-2" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
+  
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2021</span></div>
+  <div class="pub-t">A genome-wide CRISPR-based screen identifies KAT7 as a driver of cellular senescence</div>
+  <div class="pub-a">Wang W#, Zheng Y#, Sun S#, Li W#, Song M, ... <strong>Liu Z</strong>, ... Zhang W*, Qu J*, Tang F*, Liu GH*</div>
+  <div class="pub-v"><strong>Science Translational Medicine</strong>, 2021, 13(575): eabd2655</div>
+  <div class="pub-links"><a href="https://doi.org/10.1126/scitranslmed.abd2655" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
     
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2024</span></div>
-    <div class="pub-t">The sirtuin-associated human senescence program converges on the activation of placenta-specific gene PAPPA</div>
-    <div class="pub-a">Bi S#, Jiang X#, Ji Q#, ... <strong>Liu Z</strong>, ... Zhang W*, Liu GH*, Qu J*</div>
-    <div class="pub-v"><strong>Developmental Cell</strong>, 2024, 59(8):991-1009</div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.devcel.2024.02.008" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
+  <div class="pub">
+  <div class="pub-meta"><span class="pub-yr">2019</span></div>
+  <div class="pub-t">FOXO3-engineered human ESC-derived vascular cells promote vascular protection and regeneration</div>
+  <div class="pub-a">Yan P#, Li Q#, ... <strong>Liu Z</strong>, ... Qu J*, Tang F*, Liu GH*</div>
+  <div class="pub-v"><strong>Cell Stem Cell</strong>, 2019, 24: 447-461.e8</div>
+  <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
+  <div class="pub-links"><a href="https://doi.org/10.1016/j.stem.2018.12.002" class="pub-lk" target="_blank">Paper ↗</a></div>
+  </div>
     
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2023</span></div>
-    <div class="pub-t">Genome-wide CRISPR activation screening in senescent cells reveals SOX5 as a driver and therapeutic target of rejuvenation</div>
-    <div class="pub-a">Jing Y#, Jiang X#, Ji Q, ... <strong>Liu Z</strong>, ... Ren J*, Zhang W*, Qu J*, Liu GH*</div>
-    <div class="pub-v"><strong>Cell Stem Cell</strong>, 2023, 30(11): 1452-1471.e10</div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.stem.2023.09.007" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
+  </div>
     
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2023</span></div>
-    <div class="pub-t">SIRT2 counteracts primate cardiac aging via deacetylation of STAT3 that silences CDKN2B</div>
-    <div class="pub-a">Ye Yan#, Yang K#, Liu H#, Yu Y#, Song M#, ... <strong>Liu Z</strong>, ... Qu J*, Zhang W*, Liu GH*</div>
-    <div class="pub-v"><strong>Nature Aging</strong>, 2023, 3(10):1269-1287</div>
-    <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
-    <div class="pub-links"><a href="https://doi.org/10.1038/s43587-023-00486-y" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2023</span></div>
-    <div class="pub-t">m⁶A epitranscriptomic regulation of tissue homeostasis during primate aging</div>
-    <div class="pub-a">Wu Z#, Lu M#, Liu D#, ... <strong>Liu Z</strong>, ... Qu J*, Zhang W*, Ci W*, Liu GH*</div>
-    <div class="pub-v"><strong>Nature Aging</strong>, 2023, 3(6):705-721</div>
-    <div class="pub-links"><a href="https://doi.org/10.1038/s43587-023-00393-2" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2021</span></div>
-    <div class="pub-t">A genome-wide CRISPR-based screen identifies KAT7 as a driver of cellular senescence</div>
-    <div class="pub-a">Wang W#, Zheng Y#, Sun S#, Li W#, Song M, ... <strong>Liu Z</strong>, ... Zhang W*, Qu J*, Tang F*, Liu GH*</div>
-    <div class="pub-v"><strong>Science Translational Medicine</strong>, 2021, 13(575): eabd2655</div>
-    <div class="pub-links"><a href="https://doi.org/10.1126/scitranslmed.abd2655" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    <div class="pub">
-    <div class="pub-meta"><span class="pub-yr">2019</span></div>
-    <div class="pub-t">FOXO3-engineered human ESC-derived vascular cells promote vascular protection and regeneration</div>
-    <div class="pub-a">Yan P#, Li Q#, ... <strong>Liu Z</strong>, ... Qu J*, Tang F*, Liu GH*</div>
-    <div class="pub-v"><strong>Cell Stem Cell</strong>, 2019, 24: 447-461.e8</div>
-    <div class="pub-hl"><span class="pub-hlt hl-cover">🎨 Cover Story</span></div>
-    <div class="pub-links"><a href="https://doi.org/10.1016/j.stem.2018.12.002" class="pub-lk" target="_blank">Paper ↗</a></div>
-    </div>
-    
-    </div>
-    
-    </div>
-    </section>
+  </div>
+  </section>
 
 <!-- TEAM -->
 <section class="team" id="team">
@@ -1026,10 +813,8 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
           <div class="snap-item"><strong>Research Areas</strong><span>Computational biology, systems biology, epigenomics, transcriptomics, aging, neurodegeneration, and AI in biomedicine</span></div>
         </div>
       </div>
-    
-      <!-- Bottom cards: Seminars + Highlights -->
     </div>
-
+    
     <!-- ===== MENTEES ===== -->
     <div class="team-section">
       <h3 class="team-cat-title">MIT UROP Students</h3>
@@ -1071,10 +856,10 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
           <div class="tm-desc">Epigenomic and transcriptomic dissection of the links between brain aging and neurodegenerative diseases</div>
         </div>
         <div class="tm-card">
-        <div class="tm-av">GW</div>
-        <h4>Grace Wang</h4>
-        <div class="tm-role">VUROP Student · Wellesley College</div>
-        <div class="tm-desc">Regulatory roles and dysregulation of transposable elements in cancer</div>
+          <div class="tm-av">GW</div>
+          <h4>Grace Wang</h4>
+          <div class="tm-role">VUROP Student · Wellesley College</div>
+          <div class="tm-desc">Regulatory roles and dysregulation of transposable elements in cancer</div>
         </div>
       </div>
     </div>
@@ -1105,14 +890,15 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
           <h4>UNC Chapel Hill Collaborators</h4>
           <div class="tm-role">Co-mentored with Dr. Tianlong Chen</div>
           <div class="tm-desc">Shuyan Guo, Mufan Qiu, Sukwon Yun, Zhen Tan — AD prediction with AI; Cross-modality data generation; Imaging-based diagnosis</div>
+        </div>
       </div>
     </div>
     
     </div>
     </section>
-
-<!-- NEWS & ACTIVITIES -->
-<section class="news" id="news">
+    
+    <!-- NEWS & ACTIVITIES -->
+    <section class="news" id="news">
     <div class="ctn">
     <div class="shdr">
       <div class="slbl">News &amp; Activities</div>
@@ -1357,7 +1143,7 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
     
     </div>
     </section>
-        
+    
     <!-- JOIN US -->
     <section class="joinus" id="joinus">
     <div class="ctn">
@@ -1411,3 +1197,11 @@ footer{background:#111;color:rgba(255,255,255,.4);padding:28px 0;text-align:cent
     </div>
     </div>
     </section>
+    
+    <!-- FOOTER -->
+    <footer>
+    <div class="ctn">&copy; 2025 Zunpeng Liu Lab · MIT CSAIL &amp; Broad Institute of MIT and Harvard</div>
+    </footer>
+    
+    </body>
+    </html>
